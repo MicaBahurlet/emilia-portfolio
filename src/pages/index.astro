@@ -1,16 +1,26 @@
 ---
-
+import TestNavBar from '../components/TestNavBar.jsx';
+import MainLayout from '../layouts/MainLayout.astro';
+import Hero from '../components/Hero.jsx';
+import Education from '../components/Education.jsx';
+import AboutMe from '../components/AboutMe.jsx';
+import Contact from '../components/Contact.jsx';
+import Trayectoria from '../components/Trayectoria.jsx';
 ---
+<TestNavBar />
+<MainLayout>
+  <Hero />
+  <section id="sobre-mi">
+    <AboutMe />
+  </section>
+  <section id="trayectoria">
+    <Trayectoria />
+  </section>
+  <section id="formacion">
+    <Education />
+  </section>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+  <section id="contacto">
+    <Contact />
+  </section>
+</MainLayout>
