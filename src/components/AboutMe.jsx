@@ -68,7 +68,8 @@ export default function AboutMe() {
       <AboutContent>
         <Title>Sobre mí</Title>
         <Text>
-          ¡Hola! Soy Emilia, vivo en Olavarría. Soy profesora y licenciada en Letras. Me apasiona la docencia, la literatura y el trabajo editorial. Disfruto creando y editando contenidos educativos y literarios, y acompañando a otros en sus procesos de aprendizaje y escritura.
+            Soy profesora, licenciada en Letras y estudiante de Bibliotecaria Escolar con una profunda vocación por la enseñanza del lenguaje, la escritura, la edición y la archivología. Durante mi trayectoria he trabajado en proyectos pedagógicos, de redacción, corrección y edición de textos literarios, académicos y periodísticos. Tengo un alto nivel de inglés, lo que me permite trabajar con contenidos bilingües, de adaptación y traducción. <br />
+            Mi especialidad es crear, redactar, revisar y corregir contenidos claros y coherentes para editoriales, medios digitales, blogs culturales o instituciones educativas. Estoy en búsqueda de oportunidades remotas que me permitan colaborar con equipos editoriales, desarrollar contenidos, corregir textos, adaptar y traducir ideas en palabras.
         </Text>
       </AboutContent>
     </AboutSection>
