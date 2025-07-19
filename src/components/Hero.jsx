@@ -1,10 +1,23 @@
 import React from "react";
 import styled from "@emotion/styled";
+import { keyframes } from "@emotion/react";
+
+// Animación de entrada (fade in + slide up)
+const fadeInUp = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 
 const HeroSection = styled.section`
   width: 100vw;
-  min-height: 60vh;
-  background-image: url('/BackgroundHero.jpg');
+  min-height: 80vh;
+  background-image: url('/TestHero1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -39,6 +52,8 @@ const Title = styled.h1`
   margin: 0 0 1rem 0;
   color: #222;
   font-weight: 700;
+  opacity: 0;
+  animation: ${fadeInUp} 1.2s cubic-bezier(0.23, 1, 0.32, 1) 0.2s forwards;
 
   @media (max-width: 768px) {
     font-size: 1.4rem;
@@ -50,6 +65,8 @@ const Subtitle = styled.h2`
   margin: 0;
   color: #444;
   font-weight: 400;
+  opacity: 0;
+  animation: ${fadeInUp} 1.2s cubic-bezier(0.23, 1, 0.32, 1) 0.7s forwards;
 
   @media (max-width: 768px) {
     font-size: 0.95rem;

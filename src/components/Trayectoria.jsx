@@ -163,7 +163,7 @@ const PubTitle = styled.h3`
 export default function Trayectoria() {
   return (
     <MainContainer>
-      <SectionTitle>Trayectoria</SectionTitle>
+      <SectionTitle>Experiencia laboral</SectionTitle>
       <TimelineSection>
         <TimelineContainer>
           <VerticalLine />

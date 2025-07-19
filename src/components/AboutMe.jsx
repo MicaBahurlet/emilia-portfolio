@@ -1,5 +1,18 @@
 import React from "react";
 import styled from "@emotion/styled";
+import { keyframes } from "@emotion/react";
+
+// Animación de entrada desde la derecha
+const slideInRight = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
 
 const AboutSection = styled.section`
   display: flex;
@@ -59,16 +72,18 @@ const Text = styled.p`
   color: #444;
   margin: 0;
   line-height: 1.6;
+  opacity: 0;
+  animation: ${slideInRight} 1.2s cubic-bezier(0.23, 1, 0.32, 1) 0.3s forwards;
 `;
 
 export default function AboutMe() {
   return (
     <AboutSection>
-      <ProfileImg src="/ProfileEmilia.png" alt="Foto de Emilia" />
+      <ProfileImg src="/Profile.jpg" alt="Foto de Emilia" />
       <AboutContent>
         <Title>Sobre mí</Title>
         <Text>
-            Soy profesora, licenciada en Letras y estudiante de Bibliotecaria Escolar con una profunda vocación por la enseñanza del lenguaje, la escritura, la edición y la archivología. Durante mi trayectoria he trabajado en proyectos pedagógicos, de redacción, corrección y edición de textos literarios, académicos y periodísticos. Tengo un alto nivel de inglés, lo que me permite trabajar con contenidos bilingües, de adaptación y traducción. <br />
+            Soy profesora, licenciada en Letras y estudiante de Bibliotecaria Escolar con una profunda vocación por la enseñanza del lenguaje, la escritura, la edición y la archivología. Durante mi trayectoria he trabajado en proyectos pedagógicos, de redacción, corrección y edición de textos literarios y académicos. Tengo un alto nivel de inglés, lo que me permite trabajar con contenidos bilingües, de adaptación y traducción. <br />
             Mi especialidad es crear, redactar, revisar y corregir contenidos claros y coherentes para editoriales, medios digitales, blogs culturales o instituciones educativas. Estoy en búsqueda de oportunidades remotas que me permitan colaborar con equipos editoriales, desarrollar contenidos, corregir textos, adaptar y traducir ideas en palabras.
         </Text>
       </AboutContent>
