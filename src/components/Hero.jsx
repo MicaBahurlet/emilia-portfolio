@@ -24,26 +24,49 @@ const HeroSection = styled.section`
   image-rendering: auto;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   box-sizing: border-box;
   padding: 0 5vw;
+  gap: 3rem;
 
   @media (max-width: 768px) {
+    flex-direction: column;
     min-height: 40vh;
-    padding: 0 2vw;
-    justify-content: center;
+    padding: 2rem 2vw;
+    gap: 1.5rem;
+  }
+`;
+
+const ProfileImg = styled.img`
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  background: #fff;
+  display: block;
+
+  @media (max-width: 768px) {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
   }
 `;
 
 const HeroContent = styled.div`
-  padding: 2rem 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 2rem 4rem;
   border-radius: 1rem;
   text-align: right;
 
   @media (max-width: 768px) {
+    align-items: center;
+    text-align: center;
     padding: 1.2rem 1rem;
     max-width: 95vw;
-    text-align: center;
   }
 `;
 
@@ -76,6 +99,7 @@ const Subtitle = styled.h2`
 export default function Hero() {
   return (
     <HeroSection>
+      <ProfileImg src="/Profile.jpg" alt="Foto de Emilia" />
       <HeroContent>
         <Title>Lic. María Emilia Martin</Title>
         <Subtitle>Content Writer/editor | Literary Editor | Educational Content Writer | Editorial Translator</Subtitle>

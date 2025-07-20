@@ -30,19 +30,19 @@ const AboutSection = styled.section`
   }
 `;
 
-const ProfileImg = styled.img`
-  width: 260px;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-  background: #fff;
+// const ProfileImg = styled.img`
+//   width: 260px;
+//   height: 260px;
+//   object-fit: cover;
+//   border-radius: 50%;
+//   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+//   background: #fff;
 
-  @media (max-width: 900px) {
-    width: 180px;
-    height: 180px;
-  }
-`;
+//   @media (max-width: 900px) {
+//     width: 180px;
+//     height: 180px;
+//   }
+// `;
 
 const AboutContent = styled.div`
   flex: 1;
@@ -50,7 +50,7 @@ const AboutContent = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  max-width: 600px;
+  max-width: 1000px;
 
   @media (max-width: 900px) {
     align-items: center;
@@ -79,7 +79,6 @@ const Text = styled.p`
 export default function AboutMe() {
   return (
     <AboutSection>
-      <ProfileImg src="/Profile.jpg" alt="Foto de Emilia" />
       <AboutContent>
         <Title>Sobre mí</Title>
         <Text>
